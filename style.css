@@ -1,0 +1,116 @@
+/* Estilos CSS aqui */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: url('https://classic.exame.com/wp-content/uploads/2020/12/GettyImages-133033277.jpg?quality=70&strip=info&w=1024') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.container {
+  width: 600px; /* Aumentamos a largura para acomodar melhor a tabela */
+  padding: 20px;
+  background: #a50020; /* Vermelho */
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  position: relative;
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h1 {
+  color: #fff; /* Texto branco */
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.5); /* Fundo branco com transparência */
+  color: #000; /* Texto preto */
+  transition: background 0.3s;
+}
+
+input[type="text"]::placeholder, input[type="date"]::placeholder, input[type="time"]::placeholder, select::placeholder {
+  color: #fff; /* Texto branco para as placeholders */
+}
+
+input[type="submit"] {
+  background: #D10024; /* Vermelho Barcelona */
+  color: #fff; /* Texto branco */
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background: #a70019; /* Cor mais escura no hover */
+}
+
+.confirmation {
+  margin-top: 20px;
+  padding: 10px;
+  background: #a50020; /* Vermelho */
+  color: #fff; /* Texto branco */
+  border-radius: 4px;
+  overflow-x: auto; /* Adicionamos overflow-x para habilitar scroll horizontal */
+}
+
+.cinema-name {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff; /* Texto branco */
+  font-style: italic; /* Texto em itálico */
+}
+
+.popcorn-icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+/* Estilizando a tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #fff;
+}
+
+th {
+  background-color: #D10024; /* Vermelho Barcelona */
+}
+
+tr:nth-child(even) {
+  background-color: #a50020; /* Vermelho escuro para linhas pares */
+}
+
+tr:hover {
+  background-color: #a70019; /* Vermelho mais escuro ao passar o mouse */
+}

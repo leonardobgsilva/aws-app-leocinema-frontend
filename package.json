@@ -1,0 +1,13 @@
+{
+    "name": "leocinema-frontend",
+    "version": "1.0.0",
+    "description": "Frontend da aplicação Leo's Cinema",
+    "main": "index.html",
+    "scripts": {
+      "start": "node ./build.js && lite-server"
+    },
+    "dependencies": {
+      "lite-server": "^2.6.1",
+      "dotenv": "^10.0.0"
+    }
+  }
